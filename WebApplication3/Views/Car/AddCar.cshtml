@@ -1,0 +1,33 @@
+﻿@using WebApplication3.Models.ViewModels;
+@model AddCarViewModel
+
+
+
+<form asp-controller="Car" asp-action="AddCar" method="post">
+    <div class="mb-3 mrgn">
+        <label for="Make" class="form-label fgwhite">Make:</label>
+        <input class="form-control" asp-for="@Model.Make">
+        <span class="fgred" asp-validation-for="@Model.Make"></span><br />
+
+        <label for="Model" class="form-label fgwhite">Model:</label>
+        <input class="form-control" asp-for="@Model.Model">
+        <span class="fgred" asp-validation-for="@Model.Model"></span><br />
+
+        <label for="Price" class="form-label fgwhite">Price:</label>
+        <input class="form-control" asp-for="@Model.Price">
+        <span class="fgred" asp-validation-for="@Model.Price"></span><br />
+
+        <label for="Year" class="form-label fgwhite">Year:</label>
+        <input class="form-control" asp-for="@Model.Year">
+        <span class="fgred" asp-validation-for="@Model.Year"></span><br />
+
+        <label for="Color" class="form-label fgwhite">Color:</label>
+        <input class="form-control" asp-for="@Model.Color">
+        <span class="fgred" asp-validation-for="@Model.Color"></span><br />
+
+        <label for="EngineSize" class="form-label fgwhite">EngineSize:</label>
+        <input class="form-control" asp-for="@Model.EngineSize">
+        <span class="fgred" asp-validation-for="@Model.EngineSize"></span><br />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
