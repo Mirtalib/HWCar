@@ -38,7 +38,7 @@ namespace WebApplication3.Controllers
             {
                 var car = new Car()
                 {
-                    Id = cars[cars.Count].Id++,
+                    Id = cars[cars.Count - 1].Id + 1,
                     Make = vm.Make,
                     Model = vm.Model,
                     Year = vm.Year,
